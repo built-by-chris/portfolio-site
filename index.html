@@ -3,101 +3,88 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Chris Rouse | Built by Chris</title>
+    <title>Built by Chris</title>
     <meta
       name="description"
-      content="A coming soon page for Chris Rouse — builder, designer, and technologist behind Built by Chris."
+      content="Built by Chris — a clean personal brand landing page with a bold intro, headshot, and logo-driven visual system."
     />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap"
       rel="stylesheet"
     />
     <link rel="stylesheet" href="styles.css" />
   </head>
   <body>
-    <main class="page-shell">
-      <section class="hero-card">
-        <div class="hero-grid">
-          <div class="logo-panel" aria-hidden="true">
-            <div class="logo-orb"></div>
-            <svg class="brand-mark" viewBox="0 0 420 420" role="presentation">
-              <defs>
-                <linearGradient id="markGradient" x1="0%" y1="100%" x2="100%" y2="0%">
-                  <stop offset="0%" stop-color="#12b8cb" />
-                  <stop offset="100%" stop-color="#73f2ec" />
-                </linearGradient>
-                <filter id="glow">
-                  <feGaussianBlur stdDeviation="4" result="blur" />
-                  <feMerge>
-                    <feMergeNode in="blur" />
-                    <feMergeNode in="SourceGraphic" />
-                  </feMerge>
-                </filter>
-              </defs>
-              <g fill="none" stroke="url(#markGradient)" stroke-linecap="round" stroke-linejoin="round" filter="url(#glow)">
-                <path d="M58 340C140 302 196 252 248 186C279 146 309 103 343 56" stroke-width="17" />
-                <path d="M214 292H298V352H344V276H390" stroke-width="7" opacity="0.95" />
-                <path d="M320 103H365V182H390V292" stroke-width="7" opacity="0.95" />
-                <path d="M275 138V236" stroke-width="7" opacity="0.95" />
-                <path d="M238 170H314" stroke-width="7" opacity="0.95" />
-                <path d="M182 118L196 178L239 236" stroke-width="8" stroke-dasharray="1 18" opacity="0.9" />
-                <path d="M110 222L169 238L238 267" stroke-width="8" stroke-dasharray="1 18" opacity="0.9" />
-                <path d="M95 302L150 252L189 233" stroke-width="8" stroke-dasharray="1 18" opacity="0.9" />
-              </g>
-              <g fill="url(#markGradient)" filter="url(#glow)">
-                <circle cx="154" cy="182" r="18" opacity="0.95" />
-                <circle cx="101" cy="237" r="15" opacity="0.82" />
-                <rect x="176" y="88" width="28" height="28" rx="4" />
-                <rect x="223" y="151" width="34" height="34" rx="4" />
-                <rect x="256" y="94" width="34" height="34" rx="4" />
-                <rect x="248" y="258" width="34" height="34" rx="4" />
-                <rect x="274" y="311" width="34" height="34" rx="4" />
-                <rect x="322" y="224" width="34" height="34" rx="4" />
-                <rect x="354" y="170" width="28" height="28" rx="4" />
-                <rect x="354" y="258" width="28" height="28" rx="4" />
-                <circle cx="205" cy="220" r="10" opacity="0.88" />
-              </g>
-            </svg>
-            <p class="logo-caption">Logo-inspired motion system with connected nodes, growth, and clarity.</p>
-          </div>
+    <main class="site-shell">
+      <section class="hero">
+        <header class="topbar">
+          <span class="site-tag">BuiltbyChris.dev</span>
+          <span class="brand-chip">Built by Chris</span>
+        </header>
 
+        <div class="hero-layout">
           <div class="hero-copy">
-            <p class="eyebrow">chrisrouse.me</p>
-            <p class="brand-pill">Built by Chris</p>
-
-            <h1>Built for momentum. Launching soon.</h1>
-
-            <p class="intro">
-              I’m building a sharper digital home for my portfolio — shaped around the same ideas in my logo:
-              connected systems, upward motion, and thoughtful execution.
+            <p class="eyebrow">Personal brand · digital builder · modern web presence</p>
+            <h1>Built to create momentum for your next move.</h1>
+            <p class="lede">
+              I design and build polished digital experiences with clarity, motion, and systems thinking.
+              This starter layout uses my brand colors, headshot, and logo to create a clean hero section
+              that feels personal and immediately recognizable.
             </p>
 
-            <div class="status-block">
+            <div class="cta-row">
+              <a class="button button-primary" href="mailto:hello@builtbychris.dev">Let’s work together</a>
+              <a class="button button-secondary" href="#about">See the brand direction</a>
+            </div>
+
+            <div class="status-card" id="about">
               <span class="status-dot" aria-hidden="true"></span>
-              <p>Now in progress: refining the site experience, featured work, and the story behind the brand.</p>
+              <p>
+                Clean, logo-matched design system with layered glow accents, image-led branding, and a
+                strong launch-ready hero section.
+              </p>
             </div>
 
-            <div class="content-grid">
+            <div class="feature-grid">
               <article>
-                <h2>Brand direction</h2>
+                <h2>Recognizable branding</h2>
                 <p>
-                  The palette now pulls from the logo’s cyan and aqua glow to make the page feel more cohesive and recognizable.
+                  Your logo appears in the navigation, the hero artwork, and the background glow language to
+                  keep the site visually consistent.
                 </p>
               </article>
               <article>
-                <h2>What’s coming</h2>
+                <h2>Personal connection</h2>
                 <p>
-                  Selected projects, experiments, and writing focused on product thinking, design, and modern web craftsmanship.
+                  The hero uses your headshot prominently so the brand feels human, approachable, and built
+                  around you instead of a generic template.
                 </p>
               </article>
             </div>
+          </div>
 
-            <footer class="hero-footer">
-              <p>Say hello before launch.</p>
-              <a href="mailto:hello@chrisrouse.me">hello@chrisrouse.me</a>
-            </footer>
+          <div class="hero-visual" aria-label="Built by Chris brand visuals">
+            <div class="visual-frame">
+              <img class="brand-watermark" src="assets/logo.png" alt="" />
+
+              <div class="logo-card">
+                <img src="assets/logo.png" alt="Built by Chris logo" />
+              </div>
+
+              <div class="metric-card metric-card-top">
+                <span class="metric-label">Brand theme</span>
+                <strong>Connected systems</strong>
+              </div>
+
+              <div class="metric-card metric-card-bottom">
+                <span class="metric-label">Visual tone</span>
+                <strong>Clean. Modern. Teal-led.</strong>
+              </div>
+
+              <img class="headshot" src="assets/headshot.png" alt="Chris wearing a teal shirt" />
+            </div>
           </div>
         </div>
       </section>
