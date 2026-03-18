@@ -6,7 +6,7 @@
     <title>Chris Rouse | Built by Chris</title>
     <meta
       name="description"
-      content="A coming soon page for Chris Rouse — designer, developer, and builder behind Built by Chris."
+      content="A coming soon page for Chris Rouse — builder, designer, and technologist behind Built by Chris."
     />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -19,40 +19,87 @@
   <body>
     <main class="page-shell">
       <section class="hero-card">
-        <p class="eyebrow">chrisrouse.me</p>
-        <p class="brand-pill">Built by Chris</p>
+        <div class="hero-grid">
+          <div class="logo-panel" aria-hidden="true">
+            <div class="logo-orb"></div>
+            <svg class="brand-mark" viewBox="0 0 420 420" role="presentation">
+              <defs>
+                <linearGradient id="markGradient" x1="0%" y1="100%" x2="100%" y2="0%">
+                  <stop offset="0%" stop-color="#12b8cb" />
+                  <stop offset="100%" stop-color="#73f2ec" />
+                </linearGradient>
+                <filter id="glow">
+                  <feGaussianBlur stdDeviation="4" result="blur" />
+                  <feMerge>
+                    <feMergeNode in="blur" />
+                    <feMergeNode in="SourceGraphic" />
+                  </feMerge>
+                </filter>
+              </defs>
+              <g fill="none" stroke="url(#markGradient)" stroke-linecap="round" stroke-linejoin="round" filter="url(#glow)">
+                <path d="M58 340C140 302 196 252 248 186C279 146 309 103 343 56" stroke-width="17" />
+                <path d="M214 292H298V352H344V276H390" stroke-width="7" opacity="0.95" />
+                <path d="M320 103H365V182H390V292" stroke-width="7" opacity="0.95" />
+                <path d="M275 138V236" stroke-width="7" opacity="0.95" />
+                <path d="M238 170H314" stroke-width="7" opacity="0.95" />
+                <path d="M182 118L196 178L239 236" stroke-width="8" stroke-dasharray="1 18" opacity="0.9" />
+                <path d="M110 222L169 238L238 267" stroke-width="8" stroke-dasharray="1 18" opacity="0.9" />
+                <path d="M95 302L150 252L189 233" stroke-width="8" stroke-dasharray="1 18" opacity="0.9" />
+              </g>
+              <g fill="url(#markGradient)" filter="url(#glow)">
+                <circle cx="154" cy="182" r="18" opacity="0.95" />
+                <circle cx="101" cy="237" r="15" opacity="0.82" />
+                <rect x="176" y="88" width="28" height="28" rx="4" />
+                <rect x="223" y="151" width="34" height="34" rx="4" />
+                <rect x="256" y="94" width="34" height="34" rx="4" />
+                <rect x="248" y="258" width="34" height="34" rx="4" />
+                <rect x="274" y="311" width="34" height="34" rx="4" />
+                <rect x="322" y="224" width="34" height="34" rx="4" />
+                <rect x="354" y="170" width="28" height="28" rx="4" />
+                <rect x="354" y="258" width="28" height="28" rx="4" />
+                <circle cx="205" cy="220" r="10" opacity="0.88" />
+              </g>
+            </svg>
+            <p class="logo-caption">Logo-inspired motion system with connected nodes, growth, and clarity.</p>
+          </div>
 
-        <h1>Something thoughtful is on the way.</h1>
+          <div class="hero-copy">
+            <p class="eyebrow">chrisrouse.me</p>
+            <p class="brand-pill">Built by Chris</p>
 
-        <p class="intro">
-          I’m building a portfolio home for the work, experiments, and ideas I’m most proud of —
-          with a focus on clean design, useful products, and internet craftsmanship.
-        </p>
+            <h1>Built for momentum. Launching soon.</h1>
 
-        <div class="status-block">
-          <span class="status-dot" aria-hidden="true"></span>
-          <p>Now in progress: shaping a sharper digital home for projects, writing, and selected work.</p>
-        </div>
-
-        <div class="content-grid">
-          <article>
-            <h2>The direction</h2>
-            <p>
-              A simple, modern portfolio that feels personal, credible, and quietly confident.
+            <p class="intro">
+              I’m building a sharper digital home for my portfolio — shaped around the same ideas in my logo:
+              connected systems, upward motion, and thoughtful execution.
             </p>
-          </article>
-          <article>
-            <h2>The brand</h2>
-            <p>
-              “Built by Chris” leads with personality while <strong>Chris Rouse</strong> stays clear and searchable.
-            </p>
-          </article>
-        </div>
 
-        <footer class="hero-footer">
-          <p>Launching soon.</p>
-          <a href="mailto:hello@chrisrouse.me">hello@chrisrouse.me</a>
-        </footer>
+            <div class="status-block">
+              <span class="status-dot" aria-hidden="true"></span>
+              <p>Now in progress: refining the site experience, featured work, and the story behind the brand.</p>
+            </div>
+
+            <div class="content-grid">
+              <article>
+                <h2>Brand direction</h2>
+                <p>
+                  The palette now pulls from the logo’s cyan and aqua glow to make the page feel more cohesive and recognizable.
+                </p>
+              </article>
+              <article>
+                <h2>What’s coming</h2>
+                <p>
+                  Selected projects, experiments, and writing focused on product thinking, design, and modern web craftsmanship.
+                </p>
+              </article>
+            </div>
+
+            <footer class="hero-footer">
+              <p>Say hello before launch.</p>
+              <a href="mailto:hello@chrisrouse.me">hello@chrisrouse.me</a>
+            </footer>
+          </div>
+        </div>
       </section>
     </main>
   </body>
