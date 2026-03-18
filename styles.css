@@ -91,7 +91,7 @@ h1 {
 .status-block {
   display: flex;
   gap: 12px;
-  align-items: flex-start;
+  align-items: center;
   margin-bottom: 32px;
   padding: 16px 18px;
   border-radius: 18px;
@@ -99,10 +99,13 @@ h1 {
   border: 1px solid rgba(255, 255, 255, 0.06);
 }
 
+.status-block p {
+  margin: 0;
+}
+
 .status-dot {
   width: 12px;
   height: 12px;
-  margin-top: 6px;
   border-radius: 999px;
   background: linear-gradient(180deg, #34d399, #10b981);
   box-shadow: 0 0 20px rgba(16, 185, 129, 0.45);
