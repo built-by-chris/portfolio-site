@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Photography | Chris Rouse</title>
+    <meta
+      name="description"
+      content="A personal photography page from Chris Rouse about noticing light, place, details, animals, people, and everyday moments."
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="/styles.css" />
+  </head>
+  <body>
+    <header class="site-header">
+      <a class="site-mark" href="/" aria-label="Chris Rouse home">
+        <img src="/assets/logo.png" alt="" />
+        <span>chrisrouse.me</span>
+      </a>
+
+      <input class="nav-toggle" type="checkbox" id="nav-toggle" aria-label="Toggle navigation menu" />
+      <label class="nav-toggle-label" for="nav-toggle">
+        <span></span>
+        <span></span>
+        <span></span>
+      </label>
+
+      <nav class="site-nav" aria-label="Primary navigation">
+        <a href="/">Home</a>
+        <a href="/about">About</a>
+        <a href="/systems-operations">Systems &amp; Operations</a>
+        <a href="/photography" aria-current="page">Photography</a>
+      </nav>
+    </header>
+
+    <main class="site-shell">
+      <section class="page-hero photography-page-hero" aria-labelledby="photography-title">
+        <p class="eyebrow">Photography</p>
+        <h1 id="photography-title">A personal practice for slowing down and seeing better.</h1>
+        <p class="lede">
+          Photography is a hobby and a way to pay closer attention. I’m drawn to light, place, details, animals, people, and everyday moments that say something quietly.
+        </p>
+      </section>
+
+      <section class="content-section" aria-labelledby="gallery-title">
+        <div class="section-heading split-heading">
+          <div>
+            <p class="eyebrow">Gallery</p>
+            <h2 id="gallery-title">Images with room for captions and short stories.</h2>
+          </div>
+          <p>
+            Real photos can replace these placeholders over time. The goal is a gallery that carries short observations and stories, not just images in a grid.
+          </p>
+        </div>
+
+        <div class="photo-grid" aria-label="Photography gallery placeholders">
+          <article class="photo-card photo-card-one">
+            <div>
+              <span>Light study</span>
+              <p>Placeholder for a frame where shadow, reflection, or a late-day glow did most of the storytelling.</p>
+            </div>
+          </article>
+          <article class="photo-card photo-card-two">
+            <div>
+              <span>Place</span>
+              <p>Room for a scene that captures the mood of a street, trail, room, or ordinary corner.</p>
+            </div>
+          </article>
+          <article class="photo-card photo-card-three">
+            <div>
+              <span>Details</span>
+              <p>A future photo and caption about texture, pattern, weathering, tools, signs, or small visual clues.</p>
+            </div>
+          </article>
+          <article class="photo-card photo-card-four">
+            <div>
+              <span>Animals</span>
+              <p>Space for the personality, movement, or stillness of an animal that made me stop and watch.</p>
+            </div>
+          </article>
+          <article class="photo-card photo-card-five">
+            <div>
+              <span>People</span>
+              <p>A placeholder for respectful candid or portrait work with a short note about the moment behind it.</p>
+            </div>
+          </article>
+          <article class="photo-card photo-card-six">
+            <div>
+              <span>Everyday</span>
+              <p>Images from the small scenes that are easy to miss until you deliberately look for them.</p>
+            </div>
+          </article>
+        </div>
+      </section>
+    </main>
+  </body>
+</html>
