@@ -6,7 +6,7 @@
     <title>Chris Rouse | Built by Chris</title>
     <meta
       name="description"
-      content="A coming soon page for Chris Rouse — builder, designer, and technologist behind Built by Chris."
+      content="Chris Rouse's portfolio for systems and operations work, personal story, and photography."
     />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -17,38 +17,135 @@
     <link rel="stylesheet" href="styles.css" />
   </head>
   <body>
+    <header class="site-header" aria-label="Primary navigation">
+      <a class="site-mark" href="#home" aria-label="Chris Rouse home">
+        <img src="assets/logo.png" alt="" />
+        <span>chrisrouse.me</span>
+      </a>
+      <nav class="site-nav">
+        <a href="#home">Home</a>
+        <a href="#about">About</a>
+        <a href="#photography">Photography</a>
+        <a href="#systems">Systems &amp; Operations</a>
+      </nav>
+    </header>
+
     <main class="site-shell">
-      <section class="hero">
+      <section class="hero home-hero" id="home" aria-labelledby="home-title">
+        <div class="section-kicker">Built by Chris</div>
+        <div class="home-layout">
+          <div>
+            <p class="eyebrow">Portfolio · Systems · Photography · Story</p>
+            <h1 id="home-title">A portfolio for what I build, notice, and make better.</h1>
+            <p class="lede">
+              I’m Chris Rouse: a systems thinker, operations problem-solver, and curious maker. This site is the umbrella for my professional work, the experiences that shaped me, and the creative experiments I’m picking up along the way.
+            </p>
+            <div class="cta-row">
+              <a class="button button-primary" href="#systems">Explore my systems work</a>
+              <a class="button button-secondary" href="#about">Get to know me</a>
+            </div>
+          </div>
+
+          <div class="intro-card">
+            <img class="intro-logo" src="assets/logo.png" alt="Built by Chris logo" />
+            <p>
+              The common thread: I like finding the signal in the noise, making practical systems, and helping people move through work with more clarity.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <section class="content-section" id="about" aria-labelledby="about-title">
+        <div class="section-heading">
+          <p class="eyebrow">About</p>
+          <h2 id="about-title">Who I am, where I’ve been, and what makes me me.</h2>
+          <p>
+            I’m drawn to the places where people, process, and technology meet. My path has given me a practical eye for what works in the real world, not just what looks tidy in a diagram.
+          </p>
+        </div>
+
+        <div class="about-grid">
+          <article class="story-card story-card-featured">
+            <h3>Human first</h3>
+            <p>
+              I pay attention to how systems feel to the people using them. Good operations should reduce stress, remove ambiguity, and make the next right step easier to see.
+            </p>
+          </article>
+          <article class="story-card">
+            <h3>Built from experience</h3>
+            <p>
+              I’ve learned by working close to the details: inventory, workflows, handoffs, tools, and the small decisions that determine whether a process actually sticks.
+            </p>
+          </article>
+          <article class="story-card">
+            <h3>Curious by default</h3>
+            <p>
+              Whether I’m improving an operation or framing a photo, I’m usually asking the same questions: what matters here, what’s missing, and how can this be clearer?
+            </p>
+          </article>
+        </div>
+      </section>
+
+      <section class="content-section" id="photography" aria-labelledby="photography-title">
+        <div class="section-heading">
+          <p class="eyebrow">Photography</p>
+          <h2 id="photography-title">A new hobby for slowing down and seeing better.</h2>
+          <p>
+            Photography is my newest creative outlet. I’m using it as a way to practice attention: noticing light, texture, movement, and the quiet details I might otherwise walk past.
+          </p>
+        </div>
+
+        <div class="photo-grid" aria-label="Photography collection preview">
+          <article class="photo-card photo-card-one">
+            <span>Light</span>
+          </article>
+          <article class="photo-card photo-card-two">
+            <span>Texture</span>
+          </article>
+          <article class="photo-card photo-card-three">
+            <span>Motion</span>
+          </article>
+        </div>
+
+        <div class="status-card photo-note">
+          <span class="status-dot" aria-hidden="true"></span>
+          <p>
+            Gallery coming next: selected shots, short notes on what caught my eye, and the lessons I’m learning as I build the habit.
+          </p>
+        </div>
+      </section>
+
+      <section class="hero systems-hero" id="systems" aria-labelledby="systems-title">
         <header class="topbar">
-          <span class="site-tag">chrisrouse.me</span>
+          <span class="site-tag">Systems &amp; Operations</span>
           <span class="brand-chip">Built by Chris</span>
         </header>
 
         <div class="hero-layout">
           <div class="hero-copy">
             <p class="eyebrow">System Design · Process Improvements · Enabling Growth</p>
-            <h1>Systems that actually work.</h1>
+            <h2 id="systems-title" class="hero-title">Systems that actually work.</h2>
             <p class="lede">
               If your systems feel messy, disconnected, or harder than they should be, that’s the kind of problem I solve.
             </p>
 
             <div class="cta-row">
               <a class="button button-primary" href="mailto:hello@chrisrouse.me">Let’s fix what’s not working</a>
-              <!--<a class="button button-secondary" href="#about">See the brand direction</a>-->
+              <a class="button button-secondary" href="#photography">See what I’m noticing</a>
             </div>
 
-            <div class="status-card" id="about">
+            <div class="status-card">
               <span class="status-dot" aria-hidden="true"></span>
               <p>Now in progress: building out case studies, tools, and systems that show how I solve real operational problems.</p>
             </div>
 
             <div class="feature-grid">
               <article>
-                <h2>What I build</h2>
+                <h3>What I build</h3>
                 <p>Systems, workflows, and tools designed to reduce friction and bring clarity to how work actually gets done. From inventory and operations to process design and automation.</p>
               </article>
               <article>
-                <h2>How I approach it</h2>
+                <h3>How I approach it</h3>
                 <p>Systems-minded and human-centered. Built to be clear, usable, and resilient in real-world environments, not just look good on paper.</p>
               </article>
             </div>
@@ -58,9 +155,9 @@
             <div class="visual-frame">
               <img class="brand-watermark" src="assets/logo.png" alt="" />
 
-             <div class="logo-card">
+              <div class="logo-card">
                 <img class="logo-test" src="assets/logo.png" alt="Built by Chris logo" />
-             </div>
+              </div>
 
               <div class="metric-card metric-card-top">
                 <span class="metric-label">Human-centered</span>
